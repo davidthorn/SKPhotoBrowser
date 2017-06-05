@@ -140,7 +140,9 @@ open class SKZoomingScrollView: UIScrollView {
             maxScale = 2.5
         }
     
-        maximumZoomScale = maxScale
+        //maximumZoomScale = maxScale
+        // Allow mega zooming in for visually impaired persons
+        maximumZoomScale = 25
         minimumZoomScale = minScale
         zoomScale = minScale
         
